@@ -32,3 +32,8 @@ Here are the available methods:
 
 * #tyrion_lannister
 * #bad_ass
+
+**GOTFaker::Religion**
+
+* #name
+* #description
