@@ -1,4 +1,4 @@
-# GOTFaker
+# Game of Thrones Faker
 
 A GOT Faker gem that provides random data from Game of Thrones.
 
