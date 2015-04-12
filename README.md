@@ -1,22 +1,22 @@
-# Gotfaker
+# GOTFaker
 
 A GOT Faker gem that provides random data from Game of Thrones.
 
 Here are the available methods:
 
 
-**GOTFaker::Character**
+##GOTFaker::Character
 
 * #full_name
 * #first_name
 * #last_name
 
-**GOTFaker::House**
+##GOTFaker::House
 
 * #name
 * #description
 
-**GOTFaker::Geography**
+##GOTFaker::Geography
 
 * #continent
 * #region
@@ -28,12 +28,12 @@ Here are the available methods:
 * #forest
 * #mountain
 
-**GOTFaker::Quote**
+#GOTFaker::Quote
 
 * #tyrion_lannister
 * #bad_ass
 
-**GOTFaker::Religion**
+#GOTFaker::Religion
 
 * #name
 * #description
