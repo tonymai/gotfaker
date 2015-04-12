@@ -28,12 +28,12 @@ Here are the available methods:
 * #forest
 * #mountain
 
-#GOTFaker::Quote
+##GOTFaker::Quote
 
 * #tyrion_lannister
 * #bad_ass
 
-#GOTFaker::Religion
+##GOTFaker::Religion
 
 * #name
 * #description
