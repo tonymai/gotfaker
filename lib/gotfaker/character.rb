@@ -12,9 +12,6 @@ module GOTFaker
 
 		def self.first_name
 			name = @names.sample.split
-			while name.length < 1
-				name = @names.sample
-			end
 			return name[0]
 		end
 
