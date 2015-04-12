@@ -8,11 +8,11 @@ module GOTFaker
 			@names = @noko.search('#mw-content-text > ul >li> a:first-child').map{|name| name.inner_text}
 		end
 
-		def random_full_name
+		def self.random_full_name
 			@names.sample
 		end
 
-		def first_name
+		def self.first_name
 			name = @names.sample.split
 			while name.length < 1
 				name = @names.sample
@@ -20,7 +20,7 @@ module GOTFaker
 			return name[-1]
 		end
 
-		def last_name
+		def self.last_name
 			name = @names.sample.split
 			while name.length < 1
 				name = @names.sample
@@ -28,5 +28,5 @@ module GOTFaker
 			return name[0]
 		end
 	end
-	
+
 end
