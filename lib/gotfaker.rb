@@ -1,15 +1,9 @@
-require "gotfaker/version"
+require 'gotfaker/version'
+
+# require 'gotfaker/geography'
+# require 'gotfaker/character'
+require 'gotfaker/house'
+require 'gotfaker/lorem'
 
 module GOTFaker
-  class Name
-    def self.king
-      'king'
-    end
-  end
-
-  class Place
-    def self.kingdom
-      'kingdom'
-    end
-  end
 end
