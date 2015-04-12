@@ -17,7 +17,7 @@ module GOTFaker
     end
 
     def self.sea
-      ['Narrow Sea', 'The Jade Sea', 'Smoking Sea', 'Blackwater Bay', 'Summer Sea', 'Sunset Sea', 'Shivering Sea', 'Ironman\s Bay', 'Bay of Ice', 'The Bite', 'Bay of Seals', 'The Sea of Sighs', 'Gulf of Grief', 'Shipbreaker Bay', 'Sea of Dorne', 'Sea of Myrth', 'Redwyne Straits', 'Blazewater Bay', 'Ghiscari Strait'].sample
+      ['Narrow Sea', 'The Jade Sea', 'Smoking Sea', 'Blackwater Bay', 'Summer Sea', 'Sunset Sea', 'Shivering Sea', 'Ironman\'s Bay', 'Bay of Ice', 'The Bite', 'Bay of Seals', 'The Sea of Sighs', 'Gulf of Grief', 'Shipbreaker Bay', 'Sea of Dorne', 'Sea of Myrth', 'Redwyne Straits', 'Blazewater Bay', 'Ghiscari Strait'].sample
     end
 
     def self.river
