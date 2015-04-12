@@ -4,7 +4,7 @@ require 'gotfaker/house'
 require 'gotfaker/quote'
 require 'gotfaker/geography'
 require 'gotfaker/character'
-require 'gotfaker/lorem'
+require 'gotfaker/religion'
 
 module GOTFaker
 end
