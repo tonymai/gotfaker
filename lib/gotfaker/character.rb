@@ -22,7 +22,8 @@ module GOTFaker
 			end
 			return name[-1]
 		end
-
+		
+		#I will refactor this and make it more DRY
 		def self.beyond_wall
 			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_Beyond_the_Wall")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
 		end
