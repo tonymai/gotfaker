@@ -2,9 +2,16 @@
 
 A GOT Faker gem that provides random data from Game of Thrones.
 
-Here are the available methods:
+##Installing:
+  
+    gem install gotfaker
 
+##Usage:
+```ruby
+GOTFaker::Character.random_name      #=> "Tyrion Lannister"
 
+GOTFaker::House.name                 #=> "House Targaryen"
+```
 ##GOTFaker::Character
 
 * #random_name
