@@ -11,6 +11,21 @@ Here are the available methods:
 * #first_name
 * #last_name
 
+#####Generate name based on region:
+* #beyond_wall
+* #north
+* #iron_islands
+* #vale
+* #riverlands
+* #crownlands
+* #stormlands
+* #reach
+* #westerlands
+* #dorne
+* #meereen
+* #dothraki_sea
+* #astapor
+
 ##GOTFaker::House
 
 * #name
