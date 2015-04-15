@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Gotfaker::VERSION
   spec.authors       = ["Tony Mai","Andrew Dye","Kevin Ceballos","Mikhail Delos Trinos"]
   spec.email         = ["sf.sea.lions.2015@devbootcamp.com"]
-
+  spec.licenses      = ['MIT']
   spec.summary       = %q{Easily generate fake Game of Thrones data}
   spec.description   = %q{Faker, but for Game of Thrones fake data}
 
