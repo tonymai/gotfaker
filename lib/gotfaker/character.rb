@@ -6,6 +6,10 @@ module GOTFaker
 		noko = Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/List_of_characters"))
 		@names = noko.search('#mw-content-text > ul >li> a:first-child').map{|name| name.inner_text}
 
+		def nokogiri_sample(url)
+			Nokogiri::HTML(open(url)).search('tr>td>ul>li').map{|name| name.inner_text}.sample
+		end
+
 		def self.random_name
 			@names.sample
 		end
@@ -23,53 +27,54 @@ module GOTFaker
 			return name[-1]
 		end
 
+
 		def self.beyond_wall
-			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_Beyond_the_Wall")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
+			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_Beyond_the_Wall")
 		end
 
 		def self.north
-			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_North")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
+			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_North")
 		end
 
 		def self.iron_islands
-			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Iron_Islands")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
+			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Iron_Islands")
 		end
 
 		def self.vale
-			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Vale")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
+			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Vale")
 		end
 
 		def self.riverlands
-			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Riverlands")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
+			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Riverlands")
 		end
 
 		def self.crownlands
-			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Crownlands")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
+			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Crownlands")
 		end
 
 		def self.stormlands
-			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Stormlands")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
+			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Stormlands")
 		end
 
 		def self.reach
-			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Reach")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
+			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Reach")
 		end
 
 		def self.westerlands
-			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Westerlands")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
+			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Westerlands")
 		end
 
 		def self.dorne
-			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_Dorne")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
+			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_Dorne")
 		end
 		def self.meereen
-			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_Meereen")).search('tr>td>ul>li').mapby{|name| name.inner_text}.sample
+			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_Meereen")
 		end
 		def self.dothraki_sea
-			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Dothraki_sea")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
+			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Dothraki_sea")
 		end
 		def self.astapor
-			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_Astapor")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
+			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_Astapor")
 		end
 	end
 
