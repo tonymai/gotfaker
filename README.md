@@ -7,7 +7,7 @@ Here are the available methods:
 
 ##GOTFaker::Character
 
-* #full_name
+* #random_name
 * #first_name
 * #last_name
 
