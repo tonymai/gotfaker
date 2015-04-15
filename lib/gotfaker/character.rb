@@ -6,10 +6,6 @@ module GOTFaker
 		noko = Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/List_of_characters"))
 		@names = noko.search('#mw-content-text > ul >li> a:first-child').map{|name| name.inner_text}
 
-		def nokogiri_sample(url)
-			Nokogiri::HTML(open(url)).search('tr>td>ul>li').map{|name| name.inner_text}.sample
-		end
-
 		def self.random_name
 			@names.sample
 		end
@@ -27,54 +23,53 @@ module GOTFaker
 			return name[-1]
 		end
 
-
 		def self.beyond_wall
-			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_Beyond_the_Wall")
+			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_Beyond_the_Wall")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
 		end
 
 		def self.north
-			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_North")
+			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_North")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
 		end
 
 		def self.iron_islands
-			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Iron_Islands")
+			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Iron_Islands")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
 		end
 
 		def self.vale
-			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Vale")
+			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Vale")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
 		end
 
 		def self.riverlands
-			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Riverlands")
+			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Riverlands")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
 		end
 
 		def self.crownlands
-			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Crownlands")
+			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Crownlands")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
 		end
 
 		def self.stormlands
-			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Stormlands")
+			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Stormlands")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
 		end
 
 		def self.reach
-			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Reach")
+			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Reach")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
 		end
 
 		def self.westerlands
-			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Westerlands")
+			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Westerlands")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
 		end
 
 		def self.dorne
-			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_Dorne")
+			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_Dorne")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
 		end
 		def self.meereen
-			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_Meereen")
+			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_Meereen")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
 		end
 		def self.dothraki_sea
-			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Dothraki_sea")
+			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Dothraki_sea")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
 		end
 		def self.astapor
-			nokogiri_sample("http://awoiaf.westeros.org/index.php/Category:Characters_from_Astapor")
+			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_Astapor")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
 		end
 	end
 
