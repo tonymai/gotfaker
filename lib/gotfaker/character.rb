@@ -63,7 +63,7 @@ module GOTFaker
 			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_Dorne")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
 		end
 		def self.meereen
-			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_Meereen")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
+			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_Meereen")).search('tr>td>ul>li').mapby{|name| name.inner_text}.sample
 		end
 		def self.dothraki_sea
 			Nokogiri::HTML(open("http://awoiaf.westeros.org/index.php/Category:Characters_from_the_Dothraki_sea")).search('tr>td>ul>li').map{|name| name.inner_text}.sample
