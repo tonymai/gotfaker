@@ -81,4 +81,3 @@ module GOTFaker
   end
 
 end
-
